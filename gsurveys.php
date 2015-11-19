@@ -36,7 +36,10 @@ class Gsurveys
     
     public function shortcodePremiumContent($atts, $content=null)
     {
-        return '<div class="p402_premium">' . $content . '</div>';
+        return '<div class="p402_premium">' . $content . '</div>'.
+        '<script type="text/javascript">' .
+        'try { _402_Show(); } catch(e) {}' . 
+        '</script>';
     }
     
     
